@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*对一个ID定义用#   单独定义用星号*/
+
+
+/*左对齐也自动右对齐也是自动  就是居中*/
+#contain{width: 968px; height: 800px;background-color: #D4A7D5 ; margin-left: auto; margin-right: auto;}
+/*除去968*800zhege div 顶上的一行空隙*/
+*{margin-top: 0px;}
+
+*{background: #D3C3C3}
+
+
+/*定义头部属性*/
+#header{width: 968px; height: 100px;background-color: #DC1A32;}
+
+	#header_top_letf{width: 80px; height: 80px; background: #19DF86; float:left ;}/*此处有一个小撇步 就是对左右对不齐时候有float:left 强行把他对齐否则会自动换行*/
+	#header_top_right{width: 868px; height: 50px; background: #00FF8C; float: left; padding-left: 20px;padding-top: 30px; }
+	/*padding-left指的div中元素左边空20px再开始，但是这样会使得总宽度超过968 所以在这个div中宽度888扣掉20,同理高度也扣20*/
+	#header_base{width: 967px;height: 20px;background-color: #B8C80D;float: left;font-size: 12px;line-height: 20px;}
+	/*另外一种方法 定义文字大小  文字是正方形 所以宽等于高，所以12px宽和高 然后 定义行高  等于div高 这样高度就居中了*/
+
+
+	/*用class命名的div是用“.”开头*/
+	.menu{width: 200px;height: 20px;background-color: #940FEC;float: left;text-align: center;margin-left: 2px;}
+	/*text-align: center   div中文字的居中*/
+	/*float:left 强行把他对齐否则会自动换行*/
+	/*margin-left: 2px 每一个div之间空一个缝隙   看清楚按钮*/
+
+/*对全局超链接形式修改*/
+/*a{color: #CD152C;}*/
+
+/*对menu内超链接形式修改  后面那个是下划线*/
+.menu a{color: #CD152C;text-decoration: inherit;}
+/*鼠标悬停加粗变化*/
+.menu a:hover{font-weight: bold;}
+
+#body{width: 968px; height: 600px;background-color: #D4A7D5;}
+
+#body_1{width: 200px;height: 500px;background-color: cadetblue;margin-top: 10px;float: left;}
+.body1{font-size: 12px; width: 200px;height:150px;background-color: #C818C7;margin-top: 2px;}
+
+
+
+
+#body_2{width: 500px;height: 500px;background-color: #BF5313;margin-top: 10px;float: left;margin-left:20px; }
+#body_3{width: 200px;height: 500px;background-color: cadetblue;margin-top: 10px;float: left;margin-left:20px;}
+
+
+#foot{width: 968px; height: 100px;background-color: #28DC1A;}
+.foot1{font-size: 12px;color: #0D0C72;width: 968px;height: 20px;line-height: 20px;text-align: center;}

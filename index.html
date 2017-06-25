@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>iroya0</title>
+<!--指向到css样式表表明本文件受什么样式限制，然后给出2个属性的规定-->
+<link href="css/main.css"  type="text/css"  rel="stylesheet" >
+</head>
+
+<body>
+<!--body整个建立最大的div 为了区分给她一个id叫“内容”  之后的div嵌套在里面-->
+	<div id="contain">
+		<!--头部的div-->
+		<div id="header">
+			<!--头部一横条分成3块  左边logo 右边写字的然后下面一行 写小字   因为横条高度100 这边80*80logo 所以会剩下20px所以起名叫top_left -->
+			<div id="header_top_letf">
+				logo
+			</div>
+			<div id="header_top_right">
+				右边
+			</div>
+			<div id="header_base">
+				<!--此处开始新的div方式  就是重复样式的复用 class-->
+				<div class="menu"><a href="http://www.baidu.com">首页</a></div>
+				<!--首页是外面div里面套超链接 连接内容是文字“首页”  但是此时文字会有背景色  不太好看   网页链接一定要打完整-->
+				
+				<!--<a>在这里</a>之间是超链接的对象  所以一定要有东西-->
+		  	  	<div class="menu">
+			  	<a href="pageA.html">页面A</a>
+			 	</div>
+				
+				<!--页面一是外面超链接超链接的内容是div-->
+				
+		  	  <div class="menu">
+			  		<a href="pageB.html">页面B</a>
+		  	  </div>
+				
+			  <div class="menu"><a href="mailto:puyue2016@gmail.com">电子邮件</a></div>
+	      </div>
+		</div>
+		
+		
+		<!--身体的-->
+	  <div id="body">
+			<div id="body_1">
+				<div class="body1"><a href="pageA.html"><img src="img/2.jpg" width="200" height="187" alt=""/></a></div>
+				<div class="body1"></div>
+				<div class="body1"><a href="pageB.html"><img src="img/3.jpg" width="200" height="200" alt=""/></a></div>
+			</div>
+			<div id="body_2"></div>
+		  <div id="body_3"></div>
+		</div>
+		
+		
+		<!--页面尾--> 
+		<div id="foot">
+			<div class="foot1">联系我们。。。。。</div>
+			<div class="foot1">电话。。。。。</div>
+			<div class="foot1">邮箱。。。。。</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
